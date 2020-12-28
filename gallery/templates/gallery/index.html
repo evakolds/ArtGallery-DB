@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Art Gallery</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  {% load static %}
+  <link href="{% static 'gallery/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'gallery/img/favicon.png'%}" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700|EB+Garamond" rel="stylesheet">
+
+  <link href="{% static 'gallery/lib/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+
+  <link href="{% static 'gallery/lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+
+  <link href="{% static 'gallery/css/style.css'%}" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#theMenu">
+
+  <!-- Menu -->
+  <nav class="menu" id="theMenu">
+    <div class="menu-wrap">
+      <h1 class="logo"><a href="index.html#home">Navigation</a></h1>
+      <i class="fa fa-times-circle menu-close"></i>
+      <a href="#home" class="smoothscroll">Main</a>
+      <a href="#about" class="smoothscroll">About</a>
+      <a href="#contact" class="smoothscroll">Contacts</a>
+      <a href="https://www.facebook.com/evakoldovskaya"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.instagram.com/evakolds/"><i class="fa fa-instagram"></i></a>
+      <a href="mailto:evakoldovskaya@gmail.com"><i class="fa fa-envelope"></i></a>
+    </div>
+
+
+    <div id="menuToggle"><i class="fa fa-bars"></i></div>
+  </nav>
+
+
+  <section id="home" name="home"></section>
+  <div id="headerwrap">
+    <div class="container">
+      <div class="logo">
+        <img src="{%static 'gallery/img/logo-small.png' %}">
+      </div>
+      <br>
+      <div class="row">
+        <h1>Koldovska Art Gallery</h1>
+        <br>
+        <h3>Welcome! Here you can book a ticket.</h3>
+        <br>
+        <br>
+        <div class="col-lg-6 col-lg-offset-3">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <section id="about" name="about"></section>
+  <div id="f">
+    <div class="container">
+      <div class="row">
+        <h3>Gallery info</h3>
+        <p class="centered"><i class="icon icon-circle"></i>
+            <i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+        <div class="col-lg-6 col-lg-offset-3">
+            <p>Tickets booking is now <b>available through the website</b>.</p>
+          <p>Just register or log in, choose an exhibition that you would like to visit
+              and book a ticket following a simple procedure.</p>
+            <p>When you come to the gallery, <b>you won't need to wait in queues</b>.
+              A manager will check your booking fast and you will enter as soon as possible,
+              without any extra contact.</p>
+          <p><a href="signup/" class="btn btn-warning">SIGN UP OR LOG IN</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="contact" name="contact"></section>
+  <div id="f">
+    <div class="container">
+      <div class="row">
+        <h3>Contact the gallery</h3>
+        <p class="centered"><i class="icon icon-circle"></i>
+            <i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+        <div class="col-lg-6 col-lg-offset-3">
+          <p>Kovalskyi Lane, 5<br/>IASA, KPI<br/>Kyiv, Ukraine</p>
+          <p>evakoldovskaya@gmail.com</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="copyrights">
+    <div class="container">
+      <p>
+        &copy; Copyright <strong>Yeva Koldovska</strong>. All rights reserved
+      </p>
+
+    </div>
+  </div>
+
+
+  <script src="{% static 'gallery/lib/jquery/jquery.min.js'%}"></script>
+  <script src="{% static 'gallery/lib/bootstrap/js/bootstrap.min.js'%}"></script>
+  <script src="{% static 'gallery/lib/php-mail-form/validate.js' %}"></script>
+  <script src="{% static 'gallery/lib/easing/easing.min.js' %}"></script>
+
+
+  <script src="{% static 'gallery/js/main.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Booking</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  {% load static %}
+  <link href="{% static 'gallery/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'gallery/img/favicon.png'%}" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700|EB+Garamond" rel="stylesheet">
+
+  <link href="{% static 'gallery/lib/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+
+  <link href="{% static 'gallery/lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+
+  <link href="{% static 'gallery/css/style.css'%}" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#theMenu">
+
+<div class="col-lg-6 col-lg-offset-3">
+    <p></p>
+    <form method="POST">
+    {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit" class="btn btn-warning" value="Submit">BOOK A TICKET</button>
+    </form>
+</div>
+
+<script src="{% static 'gallery/lib/jquery/jquery.min.js'%}"></script>
+  <script src="{% static 'gallery/lib/bootstrap/js/bootstrap.min.js'%}"></script>
+  <script src="{% static 'gallery/lib/php-mail-form/validate.js' %}"></script>
+  <script src="{% static 'gallery/lib/easing/easing.min.js' %}"></script>
+  <script src="{% static 'gallery/js/main.js' %}"></script>
+
+</body>
+</html>

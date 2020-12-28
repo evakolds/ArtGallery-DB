@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  {% load static %}
+  <link href="{% static 'gallery/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'gallery/img/favicon.png'%}" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700|EB+Garamond" rel="stylesheet">
+
+  <link href="{% static 'gallery/lib/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+
+  <link href="{% static 'gallery/lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+
+  <link href="{% static 'gallery/css/style.css'%}" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#theMenu">
+
+  <!-- Menu -->
+  <nav class="menu" id="theMenu">
+    <div class="menu-wrap">
+      <h1 class="logo"><a href="index.html#home">Navigation</a></h1>
+      <i class="fa fa-times-circle menu-close"></i>
+      <a href="#home" class="smoothscroll">Main</a>
+      <a href="#portfolio" class="smoothscroll">Exhibitions</a>
+      <a href="#about" class="smoothscroll">Book a ticket</a>
+      <a href="https://www.facebook.com/evakoldovskaya"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.instagram.com/evakolds/"><i class="fa fa-instagram"></i></a>
+      <a href="mailto:evakoldovskaya@gmail.com"><i class="fa fa-envelope"></i></a>
+    </div>
+
+
+    <div id="menuToggle"><i class="fa fa-bars"></i></div>
+  </nav>
+
+
+  <section id="home" name="home"></section>
+  <div id="headerwrap2">
+    <div class="container">
+      <div class="logo">
+        <img src="{%static 'gallery/img/logo-small.png' %}">
+      </div>
+      <br>
+      <div class="row">
+        <h1>Take a look at our exhibitions</h1>
+        <br>
+        <h3>Here you can book a ticket.</h3>
+        <br>
+        <br>
+        <div class="col-lg-6 col-lg-offset-3">
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <section id="portfolio" name="portfolio"></section>
+  <div id="f">
+    <div class="container">
+      <div class="row centered">
+        <h3>1. Where Art Happened: From Klint to Party. Damian Elwes</h3>
+        <p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+
+        <div class="col-lg-6 col-lg-offset-3">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+              <div class="item active centered">
+                <img class="img-responsive" src="{% static 'gallery/img/elwes1.jpg' %}" alt="" style="height: 400px;width: auto; text-align: center">
+              </div>
+              <div class="item centered">
+                <img class="img-responsive" src="{% static 'gallery/img/elwes2.jpg' %}" alt="" style="height: 400px;width: auto; text-align: center">
+              </div>
+              <div class="item centered">
+                <img class="img-responsive" src="{% static 'gallery/img/elwes3.jpg' %}" alt="" style="height: 400px;width: auto; text-align: center">
+              </div>
+            </div>
+            <br>
+            <br>
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <section id="portfolio2" name="portfolio2"></section>
+  <div id="f">
+    <div class="container">
+      <div class="row centered">
+        <h3>2. Purple Lands. Rex Southwick</h3>
+        <p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+
+        <div class="col-lg-6 col-lg-offset-3">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+              <div class="item active centered">
+                <img class="img-responsive" src="{% static 'gallery/img/southwick1.jpg' %}" alt="" style="height: 400px;width: auto; text-align: center">
+              </div>
+              <div class="item centered">
+                <img class="img-responsive" src="{% static 'gallery/img/southwick2.jpg' %}" alt="" style="height: 400px;width: auto; text-align: center">
+              </div>
+              <div class="item centered">
+                <img class="img-responsive" src="{% static 'gallery/img/southwick3.jpg' %}" alt="" style="height: 400px;width: auto; text-align: center">
+              </div>
+            </div>
+            <br>
+            <br>
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="about" name="about"></section>
+  <div id="f">
+    <div class="container">
+      <div class="row">
+        <h3>How to book a ticket</h3>
+        <p class="centered"><i class="icon icon-circle"></i>
+            <i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+        <div class="col-lg-6 col-lg-offset-3">
+          <p>Choose an exhibition that you would like to visit. Click the button.</p>
+          <p><a href="book/" class="btn btn-warning">BOOK A TICKET</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="copyrights">
+    <div class="container">
+      <p>
+        &copy; Copyright <strong>Yeva Koldovska</strong>. All rights reserved
+      </p>
+    </div>
+  </div>
+
+
+  <script src="{% static 'gallery/lib/jquery/jquery.min.js'%}"></script>
+  <script src="{% static 'gallery/lib/bootstrap/js/bootstrap.min.js'%}"></script>
+  <script src="{% static 'gallery/lib/php-mail-form/validate.js' %}"></script>
+  <script src="{% static 'gallery/lib/easing/easing.min.js' %}"></script>
+
+
+  <script src="{% static 'gallery/js/main.js' %}"></script>
+
+</body>
+</html>
