@@ -1,7 +1,6 @@
 from django.db import models
 from django.conf import settings
 import uuid
-from datetime import datetime
 from django.utils import timezone
 
 
