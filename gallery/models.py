@@ -42,7 +42,7 @@ class Booking(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
 
     tickets_number = models.IntegerField(default=1)
-    booked_at = models.DateTimeField('date booked', default=timezone.now())
+    booked_at = models.DateTimeField('date booked', default=timezone.now)
     code = models.CharField(max_length=200, default=uuid.uuid4, blank=True, null=True)
 
     def get_short_code(self):
